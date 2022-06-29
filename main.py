@@ -4,7 +4,7 @@ def get_string(m):
 
 
 def get_integer(m):
-    my_integer = input(m)
+    my_integer = int(input(m))
     return my_integer
 
 
@@ -21,25 +21,53 @@ def print_with_indexes(l):
         print(output)
 
 
+def add_pasta(l,o):
+    print_with_indexes(l)
+    choice = get_integer("What pasta would you like to add to your order? ")
+    quantity = get_integer("How many would you like to add to your order? ")
+    l[choice][2] += quantity
+    o.append(l[choice])
+    output = "You have added {} {} to your order.".format(quantity, l[1][0])
+    print(output)
+
+
+def review_order(l):
+    total = 0
+    for x in l:
+        output = "{} : {} : ${}.".format(x[2], x[0], x[1])
+        print(output)
+        total += x[1]*x[2]
+    print("The total cost of our order is ${}.".format(total))
+
+
 def main():
     pasta_menu = [["Fettuccine Carbonara", 20, 0],
                   ["Spaghetti Pomodoro", 16, 0],
                   ["Ravioli di Ricotta", 20, 0]]
+    order_list = []
     run = True
     while run is True:
         # Things to print out
         # menu
         menu = '''
         P: Print out menu
+        A: Add item to order
+        O: Review order
         Q: Quit'''
         print(menu)
         choice = input("What would you like to do? ")
         if choice == "P":
             print_pasta(pasta_menu)
+        elif choice == "A":
+            add_pasta(pasta_menu, order_list)
         elif choice == "Q":
             run = False
+        elif choice == "O":
+            review_order(order_list)
         else:
             print("Unrecognised entry, please try again")
 
 
 main()
+
+
