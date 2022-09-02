@@ -27,9 +27,12 @@
 			</div>
 			<div class="nav-bar">
 				<ul class="nav">
-					<li><a href="#">Nav item 1</a></li>
-					<li><a href="#">Nav item 2</a></li>
-					<li><a href="#">Nav item 3</a></li>
+					<li><a href="#">Sprint One</a></li>
+					<li><a href="#">Sprint Two</a></li>
+					<li><a href="#">Sprint Three</a></li>
+					<li><a href="#">Sprint Four</a></li>
+					<li><a href="#">Sprint Five</a></li>
+					<li><a href="#">Sprint Six</a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -42,9 +45,31 @@
 					<p>This python program is a pasta bar ordering system. It is designed to help users to easily place an online order and users can either pick up or have it delivered to their homes. The menu that we have used is from the pasta bar in Wellington, 1154. I have created this program using pycharm.</p>
 					<hr>
 
+<h2>Describing Relivent Implications</h2>
+
+
+<ul>
+	<li>Usability</li>
+	<ul>
+		<li>Usability is about how a digital product should be easy to operate. The ordering system should communicate to the user what is going on, and what the need to do for it to work correctly. For example, they could use words, the way the screen is organised, or even colour changes to help the user to understand what is going on. As well as this, if the user inputs something incorrectly, it should be clearly and politely communicated that they are entering an incorrect input. If they entered something that is too large or too small, they should be notified, as well as if they enter an integer per say, when the program was expecting a string. The program needs to have an error prevention function, and when something goes wrong, the program should not crash and the user should get clear messages on how they can fix things. With polite and clear instructions, the user can intuitively learn how to navigate the program quickly. Usability means that all options are easy to understand, and that all actions are easy for the user to take.</li>
+	</ul>
+	<br>
+	<li>Functionality</li>
+	<ul>
+		<li>One of the most important thing about this program Is that is has to be created in a way that it is functional. This means making sure that it does not crash, whatever the input is, and all of the arithmetic is correct. This includes making sure the total price of the order is correct, with no extra money added on for no reason. It also means ensuring that all variables and lists are all reset and set back to zero once an order is complete, so that the next order starts on a fresh page. </li>
+	</ul>
+	<br>
+	<li>Sustainability and Future-proofing</li>
+	<ul>
+		<li>Another very important step to creating a program is to make sure that it is future-proof. As things evolve during life, we need to be able to keep updating our program. Our program needs to be able to change with the times which means making sure that it can be easily updated and you can add new features to it easily, along with ensuring that the program is able to be maintained. The program needs to be commented so that anyone who opens it can see what is going on and they are able to see where everything is. The program also needs to be structured in a way that new features can be added easily without impacting the rest of the program. The program should be able to be handed over to a different developer and they should be able to understand it quickly without any difficulties. 
+		</li>
+	</ul>
+
+</ul>
     <!-- Heading levels -->
     <h1>Sprint One</h1>
 	<p>This is Sprint one of my program about creating and ordering pasta from a pasta bar. In this sprint, the customer can view what is on the menu, along with how much it costs. This is done by printing out all items in the list with the index numbers, so that in the future, it is easy for users to pick what item they would like to choose. As well as this, users are able to quit the program, which means they are able to escape whenever they would like. </p>
+
 
 
 <p><b>Sprint One Plan</b></p>
@@ -111,114 +136,138 @@
 	</div>
 
 <h3>Reflection</h3>
-<p>In this version, we can see that the user is now able to remove items from their order. This may be because they added it by accident, or if the order needs to be changed, so this function is necessary to be able to remove things. The program is still currently not validated, which means that it crashes when a non expected integer is entered. </p>
-
+<p>In this version, we can see that the user is now able to remove items from their order. This may be because they added it by accident, or if the order needs to be changed, so this function is necessary to be able to remove things. The program is still currently not validated, which means that it crashes when a non expected integer is entered. Some new things that I would like to be able to add are editing the order, getting the customer details, and getting the customer to decide if they would like pick up or delivery. </p>
 
  <hr>
 
 
+<h1>Sprint Four</h1>
+<p>This is the fourth sprint of my program about creating and ordering pasta from a pasta bar. This sprint is all about the program being validated so that whatever the user puts in, the program will not crash and it will guide the user into what input would be correctly accepted. This means for all integers, the program will not accept any letters, and for strings, the program will not accept any integers. As well as these, it can also detect the length of any string, which means that if the user enters nothing, they will be asked again. The program is now case insensitive, so the user deosn't have to worry about that. </p>
 
-    <!-- Paragraphs -->
-    <h3>Example of formatted code</h3>
+
+
+<div class="col-container">
+	<div class="col">
+		<h4><b>Sprint Four Plan</b></h4>
+	<img class="img-responsive" src="Photos/Sprint_Four_Plan.JPG"></div>
+	<div class="col">
+		<h4><b>Screenshot of completed progrect planboard</b></h4>
+
+		<img class="img-responsive" src="Photos/Completed_Sprint_Four.png"></div>
+</div>
+
+
+
+
+<h4><b>Testing</b></h4>
+<img class="img-responsive" src="Photos/Validation_Test.png">
+
+
+<br>
+<h3>Screenshot of failed and tested code</h3>
+<div class="col-container">
+<div class="col">
 	
-                
+	<img class="img-responsive" src="Photos/Failed_Code.png">
+</div>
+
+<div class="col">
+	<img class="img-responsive" src="Photos/Validation_Code.png">
+</div>
+
+<h4><b>Current Project Backlog Completion</b></h4>
+	<img class="img-responsive" src="Photos/Project_Backlog_Half_Way_Through.png">
+<br>
+
+<h3>Reflection</h3>
+<p>In this version, we can see that the user is now able to put in any entry and the program will not crash. This has been done by creating a minumum and a maximum extry for both integers and strings. I did a test where I controlled the length of the strings, but I found a more consise, and easier way to do it, which means that each expected input that the user enters are changable. Through this sprint, I learnt different ways of validating my strings along with my integers, as I was not aware that I was able to place a different max and min number for each different entry. There are not really any major problems currently but there are still a few things that I need to add things such as editing the order, finalising the order, along with getting the customers details. </p>
 
 
-<pre style="font-size: 1.5em;">
-<code class="Python">
-# interesting comment
-def review_fruit(l):
-    for x in l:
-        output = "{:&le; 10} -- {: &gt;4}".format(x[0], x[1])
-        print(output)
-    return None
-</code>
-</pre>
-
-  <h3>Table in case you need</h3>              
-<table class="my-table"><tr><th>Tracks</th><th>Album</th><th>Artist</th></tr><tr><td>Rosalyn</td><td>Night moves</td><td>Bob Seger</td></tr><tr><td>Rock n' Roll Music</td><td>Rock n' Roll Music</td><td>The Beatles</td></tr><tr><td>Roll Over Beethoven</td><td>Rock n' Roll Music</td><td>The Beatles</td></tr><tr><td>Right Down The Lane</td><td>City to City</td><td>Gerry Rafferty</td></tr><tr><td>Ramblin Man</td><td>Brothers and Sister</td><td>The Allman Brothers Band</td></tr><tr><td>Rocket Man (I think it's going to be a long, long time)</td><td>Honky Chateau</td><td>Elton John</td></tr></table>
-                
-            <hr>     
-                
-                <h3>Example paragraph</h3>
-					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-					<hr>
-
-					<!-- Responsive images -->
-					<h3>Example image placements</h3>
-					<p>For images to be responsive (so that they will rescale to suit the width of the parent, use the <code>.img-responsive</code> class.</p>
-					<img class="img-responsive" src="assets/img/place_holder.png" alt="">
-                <hr>
-                <div class="col-container">
-                <div class="col">
-               <img class="img-responsive" src="assets/img/place_holder_sm.jpg" alt="">
-                <p>Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel.</p>
-                </div>
-                 <div class="col">
-                <img class="img-responsive" src="assets/img/place_holder_sm.jpg" alt="">
-                <p>Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci tation ullamcorper</a> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel.</p>
-                </div>
-                </div>
-                <hr>
-               
-              
-
-					<!-- Lists -->
-					<h3>Unordered list</h3>
-					<p>Unordered lists are used to markup lists where list items do not require numbering.</p>
-					<ul>
-						<li>Ut wisi enim ad minim veniam</li>
-						<li>Quis nostrud exerci tation</li>
-						<li>Lamcorper suscipit lobortis nis</li>
-						<li>Ut aliquip ex ea commodo consequat</li>
-						<li>Duis autem vel eum iriure dolor</li>
-					</ul>
-					<hr>
-
-					<h3>Ordered list</h3>
-					<p>Ordered lists are used to markup lists where list items require numbering.</p>
-					<ol>
-						<li>Hendrerit in vulputate velit esse</li>
-						<li>Olestie consequat</li>
-						<li>Vel illum dolore eu feugiat</li>
-						<li>Nulla facilisis at vero eros</li>
-						<li>Accumsan et iusto odio</li>
-					</ol>
-					<hr>
-
-					<h3>Unstyled list</h3>
-					<p>You can make the list unstyled using the <code>list-unstyled</code> class.</p>
-					<ul class="list-unstyled">
-						<li>Ut wisi enim ad minim veniam</li>
-						<li>Quis nostrud exerci tation</li>
-						<li>Lamcorper suscipit lobortis nis</li>
-						<li>Ut aliquip ex ea commodo consequat</li>
-						<li>Duis autem vel eum iriure dolor</li>
-					</ul>
-					<hr>
-
-					<h3>Inline list</h3>
-					<p>You can make the list display inline using the <code>list-inline</code> class.</p>
-					<ul class="list-inline">
-						<li>One</li>
-						<li>Two</li>
-						<li>Three</li>
-						<li>Four</li>
-					</ul>
-					<hr>
-
-				
-
-					<h3>Buttons</h3>
-					<p>You can apply the <code>btn</code> class to any element that requires a button style.</p>
-					<p><a href="#" class="btn">Submit</a></p>
-					<hr>
+<h1>Sprint 5</h1>
+<p>This is the fifth sprint of my program about creating and ordering pasta from a pasta bar. This sprint is all about editing the order along with getting the customer details. This includes asking what the user would like to change in their order, along with if they would like to have a pick up order or a delivery. This means ensuring that the correct customer address and phone number are entered and ensuring that they are 100% sure they would like delivery or pick up. </p>
 
 
+<div class="col-container">
+	<div class="col">
+		<h4><b>Sprint Five Plan</b></h4>
+		<img class="img-responsive" src="Photos/Sprint_5_Plan.JPG">
+	</div>
+	<div class="col">
+		<h4><b> Progect Board Completed </b></h4>
+<img class="img-responsive" src="Photos/Sprint_Five_Completed.png">
+</div>
+</div>
 
-               
-            
+<div class="col-container">
+<div class="col">
+	<h4><b>Failed Code</b></h4>
+	<img class="img-responsive" src="Photos/Failed_Sprint_Five.png">
+</div>
+	<div class="col">
+	<h4><b>Working sprint five</b></h4>
+	<img class="img-responsive" src="Photos/Working_Sprint_Five.png">
+</div>
+</div>
 
+
+<h3>Reflection</h3>
+<p>In this version, we can see that the user is now able to edit their order, and change the quantities of each pasta. They are also now able to chose whether they would like to pick it up or have it delivered. This comes with getting their details, and comfirming that their address and phone numbers are correct. This involves creating a new list, and adding to that list, so that now we have three different lists. During this sprint, I learnt how to change different elements in the list which is something that I hadn't done before. Currently I do not think that there are any problems that I need to address, it doesn;t crash, and all the informatoin that it ourputs is correct. There are still a few things that I need to do before I will be happy with my program. Things such as being able to finalise the order and ensure that the customer is completly happy with what they are ordering. Along with this, I need to ask them if they would like to add another, as well as telling them and finding a way that a can add $3 to their order if they chose delivery.  </p>
+
+
+<h1>Sprint 6</h1>
+<p>This is the sixth sprint of my program aobut creating and ordering pasta from a pasta bar. This sprint is all about starting to finish things off. This includes getting the customers to finalise their orders, which includes many things. Things such as if everything is correct such as their order and their details, along with if they would like to order again or not. This version was about all of the little things that needed to be done or fixed, like little errors along with commenting and DocTyping. </p>
+
+<div class="col-container">
+	<div class="col">
+		<h4><b>Sprint Six Plan</b></h4>
+		<img class="img-responsive" src="Photos/Sprint_Six_Plan.JPG">
+		</div>
+	<div class="col">
+		<h4><b>Project Board Completed</b></h4>
+		<img class="img-responsive" src="Photos/Completed_Sprint_6_Board.png">
+	</div>
+</div>
+
+<div class="col-container">
+	<div class="col">
+		<h4><b>Failed Sprint 6</b></h4>
+		<img class="img-responsive" src="Photos/Failed_Sprint_6.png">
+	</div>
+	<div class="col">
+		<h4><b>Working Sprint Six</b></h4>
+		<img class="img-responsive" src="Photos/Working_Sprint_6.png">
+	</div>
+
+
+</div>
+<h3>Reflection</h3>
+<p>In this version, we can see that the user is now able to complete their order and submit another one if they would like to. As I am now starting to finish off the code, a lot of this version was about finishing the little details to make it all complete. The main new addittions of sprint six is the finalising order function and the order again function. These two functions means that the user is now able to confirm that everything in their order list and the details list are correct, along with asking the users if they would like to place another order. In this version, there was a problem that came up when I was putting in the customer details which can be seen above, but I was able to fix this and learm from my mistakes, by not using the type of list that I had origionally used. Although I am finsihed with my code, there will alwayas be new things that I could add to my program to keep making it better. One of the things that I thought about doing was letting the customer add or remove extra ingredients from their order. There are always things that I could add to my program, I could keep improving it forever, a suggestoin that was made was even creating a hollogram, but the process that I have done is as far as I am able to go right now. Throughout this whole process, I have learnt new and different ways to code using the language python, and along with this I have learnt how to use git hub and the agile method. My completed program is perfect for a pasta phone ordering system. </p>
+
+<h2>Addressing Relivent Implications</h2>
+<ul>
+	<li>Usability</li>
+	<ul>
+		<li>Usability basically means that the program is not going to crash, and that it is easy to understand. When doing my code, I made sure that every time the user had to enter something, their input was validated. This meant that whatever the user entered, it wouldn’t cause any errors, but instead direct them on what they did wrong, and ask them to enter their input again. For example, if the program was expecting an integer to be entered but the user inputted a string, it would tell them what the problem was in a polite way, and ask them to re-enter. Everything is case insensitive, meaning if they type capitals or lowercase letters, it won’t crash the system, it will just workk like normal. This allows the user to go through the program smoothly without any confusion. Another thing about usability is that it should be easy to understand. How I have done that is by using a very simple menu design, one that all users are familiar with. It’s like a Home Screen and is easy to navigate. 		</li>
+	</ul>
+	<br>
+	<li>Functionality</li>
+	<ul>
+		<li>There are a few ways that I have made sure that this program is functional and that ensures that everything works correctly and smoothly. One of the things that I did was test my program throughout the development process and used systematic testing. This means that if there were any issues at any point, I was able to solve them before I moved on, ensuring all of the problems were fixed by the time I reached the end.  When working on different validation sections, I pulled them out and worked on them in our testing page. This meant that I was able to work on these pieces of code without worrying about anything else in the code crashing. At the end of each sprint, I went through the whole program, entering inputs that I knew weren’t the ideal ones to see what would happen. This helped me to recover any problems that occurred, and I was able to fix them.  I used everyones feedback to ensure that their experience was the best it could possibly be, even if it just meant adding breaks in my code so it became easier to read and understand. Doing all of these tests means that the end result is error free, and whatever the customer puts in, it will all work as it is supposed to and not crash. I got people to not follow the instructions to ensure that all my validation was working correctly and had clear instructions. Once I had finished, I got two different people to fully run through my code, one being Sophie, and one being my dad. These two people were unfamiliar with my code, and didn’t understand how it worked. It was important for me to know that someone who had never seen it before could still sue it and understand it without crashing. </li>
+	</ul>
+	<br>
+	<li>Sustainability and Future-proofing</li>
+	<ul>
+		<li>One of the most important parts of my program is that I have made it future-proof. This means that in the future, if I were to ever come back to the program, or if I handed it over to another developer, it will be very easy for them. One way that I have done this is my commenting on anything I thought would be useful to know. I explained when I had put new loops or function, and I also commented on what each little part of the code was for so that if anyone were trying to fix or update my program, they would know exactly what was going on. I have also structured it using a function based build. This means that for each new feature, there is a new function, which means there is no impact on what is already there. It is easy to add new items to the menu, and add new code to the program. I made sure that the only thing that needed to be updated is the main menu function, if something needed to be added or even deleted. I have doctype the program as well which helps people to clearly understand what was going on in the program. I also completed a pop 8 check that was attached through the program which made sure my code was correctly formatted according to the python conventions. That made sure that if things were incorrect, you could see what needed to be changed. This made it easy to understand what wasn’t right. For example, if there were too many white spaces at the end of the line, it would call you out on that. This is how I learnt about the different ways python likes to function, and how specific they are when it comes to little things like this. </li>
+	</ul>
+
+</ul>
+<img class="img-responsive" src="Photos/Final_pep8_Check.png">
+
+
+<h3>The final completed project backlog</h3>
+<img class="img-responsive" src="Photos/Final_Project_Backlog.png">
+
+<br>
 			
 			</div>
 			<div class="footer">
